@@ -24,6 +24,22 @@ def get_produtos(produto):
   df["keyword"] = produto
   return df
 
+def preco_medio_atual(df):
+  preco_medio = df["preco"].mean()
+  return preco_medio
+
+def preco_mediano_atual(df):
+  preco_mediano = df["preco"].median()
+  return preco_mediano
+
+def menor_preco(df):
+  menor_preco = df["preco"].min()
+  return menor_preco
+
+def maior_preco(df):
+  maior_preco = df["preco"].max()
+  return maior_preco
+
 st.title("Monitor de Preço")
 
 produto = st.text_input("digite")
@@ -32,3 +48,5 @@ botao = st.button("ok")
 if botao:
   df = get_produtos(produto=produto)
   st.write(df)
+  st.write(menor_preço(df))
+  
