@@ -48,5 +48,5 @@ botao = st.button("ok")
 if botao:
   df = get_produtos(produto=produto)
   st.write(df)
-  st.write(menor_preço(df))
+  st.write(menor_preço)
   
