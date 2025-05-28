@@ -51,4 +51,5 @@ if botao:
   st.write("Menor preço:", menor_preco(df))
   st.write("Maior preço:", maior_preco(df))
   st.write("Preço mediano atual:", preco_mediano_atual(df))
+  st.write("Preço medio atual:", preco_medio_atual(df))
   
